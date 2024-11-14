@@ -1,0 +1,17 @@
+@use './root.scss';
+
+%basic-reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+%font-reset {
+    font-family: 'Playfair Display', 'sans-serif';
+    color: root.$softBlack;
+}
+
+%lineheight-reset {
+    margin-top: 1lh;
+}

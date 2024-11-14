@@ -1,8 +1,8 @@
 # Projektdokumentation
 
-**Navn:** 
+**Navn:** Emma Marie Walker Rosby
 
-**Hold:** WUxx
+**Hold:** WU12
 
 **Uddannelse:** Webudvikler
 
@@ -18,7 +18,8 @@
 -   JavaScript
 -   Webpack
 -	Jest
--   ...
+-   Postcss
+-	Font Magician
 
 ---
 
