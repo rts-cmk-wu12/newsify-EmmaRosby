@@ -1,4 +1,5 @@
 @use '../placeholders/root.scss';
+@use '../placeholders/buttons.scss'; 
 
 main{
     padding: .5rem;
@@ -27,6 +28,10 @@ main{
         p{
             font-size: 1.125rem;
         }
+
+        img{
+            width: 100%;
+        }
     }
     
     &__dots{
@@ -35,6 +40,35 @@ main{
         justify-content: center;
         margin-top: 1rem;
     }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+
+        gap: 1rem;
+        position:absolute;
+        bottom:1.5rem;
+        width: 95%;
+    }
+
+    &__skip {
+        @extend %buttonTransparent-small;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &__button{
+            @extend %buttonTransparent-small;
+            background: none;
+            border: none;
+        }
+    }
+
+    &__next{
+        @extend %buttonGreen-small;
+
+    } 
 }
 
 .dot{
@@ -42,8 +76,10 @@ main{
     width: .8rem;
     height: .8rem;
     background-color: root.$gray;
+    margin-top: 2rem;
 }
 .currentDot{
     background-color: root.$green;
     width: 3.5rem;
 }
+
