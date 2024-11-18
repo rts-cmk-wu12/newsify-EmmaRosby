@@ -37,7 +37,12 @@ next.addEventListener('click', () => {
     slider.animate([{ transform: `translateX(-${offset}px)` }], { duration: 300, fill: 'both' })
 
     sliderDots();   
+
+/*     if(newIndex === slider.children.length - 1){
+        window.location.href = "login.html";
+    }  */ 
 }) 
+
 
 sliderDots();
 
