@@ -1,4 +1,4 @@
-const API_KEY = 'xzt2RrbEiigM4JZMC4hHDl4cHYJo2wju'
+/* const API_KEY = 'xzt2RrbEiigM4JZMC4hHDl4cHYJo2wju'
 
 const BASE_URL = 'https://api.nytimes.com/svc/';
 
@@ -14,4 +14,4 @@ async function fetchMostPopularByViews(days = 1){
 
     return data
 }
-module.exports = {fetchMostPopularByViews}
+module.exports = {fetchMostPopularByViews} */

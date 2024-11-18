@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script type="module" src="index.bundle.js"></script>
     <title>Login</title>
 </head>
 <body>
     <main>
-        <div>
-            <img src="img/newsify_logo.svg" alt="logo">
-            <h1>Newsify</h1>
-            <p>Welcome! Let’s dive into your account!</p>
-        </div>
-        <div>
-            <button>Continue with Facebook</button>
-            <button>Continue with Google</button>
-        </div>
-        <div>
-            <div></div>
-            <p>or</p>
-            <div></div>
-        </div>
-        <div>
-            <button>Sign in with password</button>
-            <p>Don’t have an account?  <a href="home.html">Sign up</a></p>
+        <div class="login">
+            <div class="login__welcome">
+                <img src="img/newsify_logo.svg" alt="logo">
+                <h1>Newsify</h1>
+                <p>Welcome! Let’s dive into your account!</p>
+            </div>
+            <div class="login__with">
+                <button>Continue with Facebook</button>
+                <button>Continue with Google</button>
+            </div>
+            <div class="login__divider">
+                <div></div>
+                <p>or</p>
+                <div></div>
+            </div>
+            <div class="login__signIn">
+                <button>Sign in with password</button>
+                <p>Don’t have an account?  <a href="home.html">Sign up</a></p>
+            </div>
         </div>
     </main>
 </body>
