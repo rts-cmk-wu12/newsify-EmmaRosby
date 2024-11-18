@@ -1,21 +1,20 @@
 @use '../placeholders/root.scss';
 @use '../placeholders/buttons.scss'; 
 
-main{
+.indexWrapper{
     padding: .5rem;
 }
 
 .onboarding{
     display: flex;
-
-
-    height: 96vh;
     flex-direction: column;
+    
+    height: 96vh;
     justify-content: space-between;
-
+    align-items: center;
+    
 }
 .slider{
-
     
     &__container{
         width: 100%;
@@ -72,6 +71,7 @@ main{
             @extend %buttonTransparent-small;
             background: none;
             border: none;
+            width: 100%;
         }
     }
 

@@ -1,0 +1,49 @@
+@use '../placeholders/root.scss';
+
+.category{
+    
+    &__details{
+
+        &__summary{
+            display: flex;
+            border-bottom: solid root.$gray;
+            align-items: center;
+            img{
+                height: 2rem;
+                width: 2rem;
+                margin: 1rem;
+            }
+            h2{
+                font-size: 1.8rem;
+            }
+        }
+        
+        &__article{
+            display: flex;
+
+            border-bottom: solid 1px root.$gray;
+            align-items: center;
+            
+        
+            img{
+                height: 4rem;
+                width: 4rem;
+                margin: 1rem;
+                border-radius: .5rem;
+                background-color: gray;
+            }
+
+            &__decsription{
+
+                h3{
+                    font-size: 1rem;
+                    font-weight: 800;
+                }
+                p{
+                    font-size: 1rem;
+                }
+            }
+
+        }
+    }
+}

@@ -4,25 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script type="module" src="api.bundle.js"></script>
+    <script type="module" src="index.bundle.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <img src="img/newsify_logo.svg" alt="logo">
         <h1>Newsify</h1>
     </header>
 
     <main>
-        <div>
+        <div class="search">
             <input type="search" name="" id="" placeholder="Search News"> 
         </div>
-        <div>
-            <details>
-                <summary>
+        <div class="category">
+            <details class="category__details">
+                <summary class="category__details__summary">
                     <img src="img/newsify_logo.svg" alt="logo">
-                    <h2>Categorie</h2>
+                    <h2>category</h2>
                 </summary>
+                <article class="category__details__article">
+                    <img src="./img/placeholder.svg" alt="">
+                    <div class="category__details__article__decsription">
+                        <h3>Headline</h3>
+                        <p>article decsription</p>
+                    </div>
+                </article>
+                
+                
             </details>
         </div>
     </main>

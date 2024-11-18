@@ -1,0 +1,22 @@
+@use '../placeholders/root.scss';
+
+
+.search{
+    display: flex;
+    justify-content: center;
+    border-bottom: solid root.$gray;
+    
+    input{
+        height: 6vh;
+        width: 98%;
+
+        padding: .5rem;
+        margin: .5rem;
+        
+        font-size: 1.3rem;
+        
+        border-radius: 3rem;
+        border: solid 3px root.$green;
+
+    }
+}
