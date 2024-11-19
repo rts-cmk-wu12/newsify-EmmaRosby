@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popular</title>
+    <title>Newsify - Settings</title>
     <script type="module" src="index.bundle.js"></script>
 </head>
 
@@ -14,42 +14,27 @@
     </header>
 
     <main>
-        <div>
-            <h2>Setting</h2>
+        <div class="headline">
+            <h2>Settings</h2>
             <p>Categories</p>
         </div>
-        <div>
-            <div>
-                <div>
+        <div class="toggle">
+            <div class="toggle__category-wrapper">
+                <div class="toggle__category-wrapper__category">
                     <img src="img/newsify_logo.svg" alt="logo">
                     <h3>Category</h3>
                 </div>
-                <div>
-                    <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                      </label>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <img src="img/newsify_logo.svg" alt="logo">
-                    <h3>Category</h3>
-                </div>
-                <div>
-                    <label class="switch">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                      </label>
-                </div>
-            </div>
+                <label class="toggle__category-wrapper__switch">
+                    <input type="checkbox" checked>
+                    <span class="toggle__category-wrapper__switch__slider"></span>
+                </label>
+            </div>   
+        
         </div>
-        <div>
-            <button>Toggle dark mode</button>
+        <div class="dark-mode">
+            <button class="dark-mode__toggle">Toggle dark mode</button>
             <small>Version 4.8.15.16.23.42</small>
         </div>
-
     </main>
 
     <footer>

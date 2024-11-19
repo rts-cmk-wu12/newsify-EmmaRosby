@@ -5,13 +5,14 @@
     display: flex;
     justify-content: center;
     border-bottom: solid root.$gray;
+    border-top: solid root.$gray;
+
     
     input{
         height: 6vh;
         width: 98%;
 
-        padding: .5rem;
-        margin: .5rem;
+        margin: 1rem;
         
         font-size: 1.3rem;
         
