@@ -38,9 +38,12 @@ next.addEventListener('click', () => {
 
     sliderDots();   
 
-/*     if(newIndex === slider.children.length - 1){
-        window.location.href = "login.html";
-    }  */ 
+     if(newIndex === slider.children.length - 1){
+        next.addEventListener('click', () => {
+            window.location.href = "login.html";
+
+        })
+    }   
 }) 
 
 

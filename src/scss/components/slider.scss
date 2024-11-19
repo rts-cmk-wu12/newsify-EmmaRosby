@@ -11,9 +11,10 @@
     
     height: 96vh;
     justify-content: space-between;
-    align-items: center;
     
 }
+
+
 .slider{
     
     &__container{
@@ -50,16 +51,17 @@
         justify-content: center;
         margin-top: 1rem;
     }
-
+    
     &__nav{
         display: flex;
         justify-content: space-between;
+        align-self: center;
 
         gap: 1rem;
         margin-top: 2rem;
         width: 95%;
     }
-
+    
     &__skip {
         @extend %buttonTransparent-small;
         
@@ -74,10 +76,10 @@
             width: 100%;
         }
     }
-
+    
     &__next{
         @extend %buttonGreen-small;
-
+        
     } 
 }
 
