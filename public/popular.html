@@ -4,30 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsify - Popular</title>
-    <script type="module" src="index.bundle.js"></script>
+    <script type="module" src="main.bundle.js"></script>
 </head>
 
 <body>
     <header class="header">
         <img src="img/newsify_logo.svg" alt="logo">
-        <h1>Newsify</h1>
+        <h1 class="dark-mode-font">Newsify</h1>
     </header>
 
     <main>
-        <div class="search">
-            <input type="search" name="" id="" placeholder="Search News"> 
-        </div>
         <div class="category">
             <details class="category__details">
                 <summary class="category__details__summary">
                     <img src="img/newsify_logo.svg" alt="logo">
-                    <h2>category</h2>
+                    <h2 class="dark-mode-font">category</h2>
                 </summary>
                 <article class="category__details__article">
                     <img src="./img/placeholder.svg" alt="">
                     <div class="category__details__article__decsription">
-                        <h3>Headline</h3>
-                        <p>article decsription</p>
+                        <h3 class="dark-mode-font">Headline</h3>
+                        <p class="dark-mode-font">article decsription</p>
                     </div>
                 </article>
                 
@@ -38,20 +35,23 @@
 
     <footer>
         <div class="footer">
-            <a href="home.html" class="footer__home">
+            <a href="home.html" class="dark-mode-font">
                 <img src="img/homeGray.svg" alt="home">
+                <img src="img/homeWhite.svg" alt="home" style="display: none;" class="dark-mode-img">
                 Home
             </a>
-            <a href="archive.html" class="footer__archive">
+            <a href="archive.html" class="dark-mode-font">
                 <img src="img/bookmarkGray.svg" alt="bookmark">
+                <img src="img/bookmarkWhite.svg" alt="bookmark" style="display: none;" class="dark-mode-img">
                 Archive
             </a>
-            <a href="popular.html" class="footer__popular currentPage">
+            <a href="popular.html" class="footer__current-page">
                 <img src="img/starGreen.svg" alt="star">
                 Popular
             </a>
-            <a href="settings.html" class="footer__settings">
+            <a href="settings.html" class="dark-mode-font">
                 <img src="img/settingsGray.svg" alt="settings">
+                <img src="img/settingsWhite.svg" alt="settings" style="display: none;" class="dark-mode-img">
                 Settings
             </a>
         </div>

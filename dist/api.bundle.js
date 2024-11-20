@@ -1,0 +1,1 @@
+(()=>{var o={968:()=>{}},r={};const{fetchMostPopularByViews:t}=function t(e){var s=r[e];if(void 0!==s)return s.exports;var n=r[e]={exports:{}};return o[e](n,n.exports,t),n.exports}(968),e=t();console.log(e)})();

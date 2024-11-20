@@ -11,9 +11,13 @@
     
     height: 96vh;
     justify-content: space-between;
+    animation: fadeIn 2s ease;
     
 }
-
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 .slider{
     
@@ -89,9 +93,12 @@
     height: .8rem;
     background-color: root.$gray;
     margin-top: 2rem;
+    transition: .2s;
+    
 }
 .currentDot{
     background-color: root.$green;
     width: 3.5rem;
+    transition: .2s;
 }
 

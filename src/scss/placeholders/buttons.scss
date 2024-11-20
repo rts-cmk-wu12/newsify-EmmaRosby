@@ -6,6 +6,7 @@
     font-size: 1.125rem;
     border: solid root.$green;
     color: root.$green;
+    background: none;
     border-radius: 2rem;
 }
 
@@ -25,13 +26,13 @@
     font-size: 1.125rem;
     border: solid root.$gray;
     color: root.$softBlack;
-    background-color: white;
+    background: none;
     border-radius: 2rem;
 
 }
 
 %buttonGreen-big{
-    width: 100%;
+    width: 50%;
     height: 4rem;
     font-size: 1.125rem;
     border: none;
@@ -39,3 +40,4 @@
     color: white;
     border-radius: 2rem;
 }
+

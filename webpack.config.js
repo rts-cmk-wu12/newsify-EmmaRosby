@@ -14,6 +14,7 @@ module.exports = {
     entry: {
         index: './src/index.js',
         api: './src/api.js',
+        main: './src/main.js',
+        setting: './src/settings.js',
     }
-
 }
