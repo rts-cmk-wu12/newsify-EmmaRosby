@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsify - Home</title>
+    <script type="module" src="home.bundle.js"></script>
     <script type="module" src="main.bundle.js"></script>
 </head>
 
@@ -17,27 +18,12 @@
         <div class="search">
             <input type="search" name="" id="" placeholder="Search News"> 
         </div>
-        <div class="category">
-            <details class="category__details">
-                <summary class="category__details__summary">
-                    <img src="img/newsify_logo.svg" alt="logo">
-                    <h2 class="dark-mode-font">category</h2>
-                </summary>
-                <article class="category__details__article">
-                    <img src="./img/placeholder.svg" alt="">
-                    <div class="category__details__article__decsription">
-                        <h3 class="dark-mode-font">Headline</h3>
-                        <p class="dark-mode-font">article decsription</p>
-                    </div>
-                </article>
-                
-                
-            </details>
+        <div class="category" id="homeCategoryContainer">
+ 
         </div>
     </main>
 
     <footer>
-        <div class="footer">
             <a href="home.html" class="footer__current-page" >
                 <img src="img/homeGreen.svg" alt="home">
                 Home
@@ -57,7 +43,7 @@
                 <img src="img/settingsWhite.svg" alt="settings" class="dark-mode-img">
                 Settings
             </a>
-        </div>
+ 
     </footer>
 </body>
 </html>

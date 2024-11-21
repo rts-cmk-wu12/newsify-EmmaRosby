@@ -1,0 +1,30 @@
+{
+  "sections": [
+    { "name": "arts" },
+    { "name": "automobiles" },
+    { "name": "books/review" },
+    { "name": "business" },
+    { "name": "fashion" },
+    { "name": "food" },
+    { "name": "health" },
+    { "name": "home" },
+    { "name": "insider" },
+    { "name": "magazine" },
+    { "name": "movies" },
+    { "name": "nyregion" },
+    { "name": "obituaries" },
+    { "name": "opinion" },
+    { "name": "politics" },
+    { "name": "realestate" },
+    { "name": "science" },
+    { "name": "sports" },
+    { "name": "sundayreview" },
+    { "name": "technology" },
+    { "name": "theater" },
+    { "name": "t-magazine" },
+    { "name": "travel" },
+    { "name": "upshot" },
+    { "name": "us" },
+    { "name": "world" }
+  ]
+}

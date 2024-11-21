@@ -3,6 +3,11 @@
 .header{
     display: flex;
 
+    position: sticky;
+    top: -2rem;
+    z-index: 1;
+
+    background-color: white;
     justify-content: center;
     align-items: center;
     padding: 2rem;

@@ -16,5 +16,8 @@ module.exports = {
         api: './src/api.js',
         main: './src/main.js',
         setting: './src/settings.js',
-    }
+        home: './src/home.js',
+        popular: './src/popular.js',
+    },
+
 }

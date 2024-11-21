@@ -1,11 +1,12 @@
 @use '../placeholders/root.scss';
 
 
-.footer{
-    position: absolute;
+footer{
+    position: fixed;
     width: 100%;
     bottom: 0;
-        
+
+    background-color: white;
     padding: 1rem;
     display: flex;
     justify-content: space-between;

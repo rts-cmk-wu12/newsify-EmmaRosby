@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsify - Popular</title>
+    <script type="module" src="popular.bundle.js"></script>
     <script type="module" src="main.bundle.js"></script>
 </head>
 
@@ -14,27 +15,15 @@
     </header>
 
     <main>
-        <div class="category">
-            <details class="category__details">
-                <summary class="category__details__summary">
-                    <img src="img/newsify_logo.svg" alt="logo">
-                    <h2 class="dark-mode-font">category</h2>
-                </summary>
-                <article class="category__details__article">
-                    <img src="./img/placeholder.svg" alt="">
-                    <div class="category__details__article__decsription">
-                        <h3 class="dark-mode-font">Headline</h3>
-                        <p class="dark-mode-font">article decsription</p>
-                    </div>
-                </article>
-                
-                
-            </details>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="Search News"> 
+        </div>
+        <div class="category" id="popularCategoryContainer">
+  
         </div>
     </main>
 
     <footer>
-        <div class="footer">
             <a href="home.html" class="dark-mode-font">
                 <img src="img/homeGray.svg" alt="home" class="light-mode-img">
                 <img src="img/homeWhite.svg" alt="home" class="dark-mode-img">
@@ -54,7 +43,6 @@
                 <img src="img/settingsWhite.svg" alt="settings" class="dark-mode-img">
                 Settings
             </a>
-        </div>
     </footer>
 </body>
 </html>
