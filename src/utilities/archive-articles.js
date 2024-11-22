@@ -2,6 +2,7 @@ import sections from '../json/section.json';
 
 const archiveContainer = document.querySelector('#archiveCategoryContainer');
 
+const { addSwipeHandler } = require ('./remove-article.js');
 const { fetchHomeTopStories } = require('./nyt.js');
 const archiveNews = await fetchHomeTopStories();
 console.log(archiveNews);
@@ -33,6 +34,8 @@ archiveNews.results.forEach(function (article) {
             articleElement.addEventListener('click', () => {
                 window.open(article.url);
             })
+
+            addSwipeHandler(articleElement, article)
         }
     }
 })  
