@@ -1,0 +1,30 @@
+/* @use '../placeholders/root.scss';
+
+.news__article {
+    position: relative;
+    overflow: hidden;
+}
+
+.swipe-action {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -30%;
+    width: 30%;
+    background: root.$green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: right 0.5s ease-in-out;
+}
+
+.news__article.swiped .swipe-action {
+    right: 0;
+}
+
+.swipe-action img {
+    width: 2rem;
+    height: 2rem;
+    background: root.$green;
+} */

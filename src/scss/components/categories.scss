@@ -20,7 +20,7 @@
         }
         
         &__article{
-            position: relative;
+
             display: flex;
 
             border-bottom: solid 1px root.$gray;
@@ -48,25 +48,5 @@
             }
 
         }
-    }
-}
-
-.drag-to-bookmark{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-    right: 0rem;
-
-    height: 7rem;
-    width: 6rem;
-
-    background-color: root.$green;
-    img{
-        height: 2rem;
-        width: 2rem;
-        background-color: root.$green;
-
     }
 }

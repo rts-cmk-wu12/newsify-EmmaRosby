@@ -7,7 +7,7 @@ const endpoints = {
     homeTopStories: 'topstories/v2/'
 }
 
-async function fetchMostPopularByViews(days = 7){
+async function fetchMostPopularByViews(days = 1){
     const url = new URL(`${days}.json`, BASE_URL + endpoints.mostPopularByViews);
     url.searchParams.set('api-key', API_KEY);
     const rensponse = await fetch(url);
@@ -27,4 +27,4 @@ async function fetchHomeTopStories(section = 'home') {
 module.exports = {
     fetchMostPopularByViews,
     fetchHomeTopStories
-} 
+}

@@ -4,20 +4,28 @@ const categories = sections.sections;
 console.log(categories);
 
 const categoryToggleContainer = document.querySelector('.toggle');
-const toggleStates = JSON.parse(localStorage.getItem('toggleStates')) || {};
+let toggleStates = JSON.parse(localStorage.getItem('toggleStates')) || {};
+
+if(!localStorage.getItem('toggleStates')){
+    toggleStates = categories.reduce((acc, category) => {
+        acc[`toggle-${category}`] = true;
+        return acc;
+    }, {});
+    localStorage.setItem('toggleStates', JSON.stringify(toggleStates));
+}
 
 function saveToggleStates() {
     localStorage.setItem('toggleStates', JSON.stringify(toggleStates));
 }
 
-categories.forEach(function(category, index) {
+categories.forEach(function(category) {
     const toggleElement = document.createElement('div');
-    const toggleId = `toggle-${index}`;
+    const toggleId = `toggle-${category}`;
 
     toggleElement.innerHTML = `
         <div class="toggle__category-wrapper__category">
             <img src="img/newsify_logo.svg" alt="logo">
-            <h3 class="dark-mode-font">${category.name}</h3>
+            <h3 class="dark-mode-font">${category}</h3>
         </div>
         <label class="toggle__category-wrapper__switch" id="${toggleId}">
             <input type="checkbox" ${toggleStates[toggleId] ? 'checked' : ''}>
@@ -34,12 +42,6 @@ categories.forEach(function(category, index) {
         saveToggleStates(); 
     });
 
-    if (!localStorage.getItem('toggleStates')) {
-        categories.forEach((_, index) => {
-            toggleStates[`toggle-${index}`] = true; 
-        });
-        saveToggleStates();
-    }
 });
 
 

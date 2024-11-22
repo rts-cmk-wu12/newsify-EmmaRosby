@@ -27,8 +27,6 @@ if (isDark) {
     toggleImages(true)
 } else {
     background.style.backgroundColor = '#FFFFFF';
-    backgroundHeader.style.backgroundColor = '#FFFFFF';
-    backgroundFooter.style.backgroundColor = '#FFFFFF';
     fonts.forEach(font => font.style.color = '#404040');
     toggleImages(false)
 }

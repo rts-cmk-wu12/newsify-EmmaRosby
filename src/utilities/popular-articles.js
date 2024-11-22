@@ -2,6 +2,7 @@ import sections from '../json/section.json';
 
 const popularContainer = document.querySelector('#popularCategoryContainer');
 
+const { hideDisabledCategories } = require ('./deselected-article.js');
 const { fetchMostPopularByViews } = require ('./nyt.js');
 const popularNews = await fetchMostPopularByViews(); 
 console.log(popularNews); 
@@ -43,5 +44,6 @@ newsSections.forEach(function(category) {
 
     detailsElement.classList.add('category__details');
     popularContainer.append(detailsElement);
+    hideDisabledCategories(category, detailsElement);
 })  
 
