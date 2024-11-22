@@ -5,7 +5,6 @@ const BASE_URL = 'https://api.nytimes.com/svc/';
 const endpoints = {
     mostPopularByViews: 'mostpopular/v2/viewed/',
     homeTopStories: 'topstories/v2/',
-    /* searchNews : 'search/v2/articlesearch' */
 }
 
 async function fetchMostPopularByViews(days = 1){
@@ -26,16 +25,7 @@ async function fetchHomeTopStories(section = 'home') {
     return data
 }
 
-/* async function fetchSearchNews(searchWord = '') {
-    const url = new URL(`${searchWord}.json`, BASE_URL + endpoints.searchNews);
-    url.searchParams.set('api-key', API_KEY);
-    const rensponse = await fetch(url);
-    const data = await rensponse.json();
-
-    return data
-} */
 module.exports = {
     fetchMostPopularByViews,
     fetchHomeTopStories,
-  /*   fetchSearchNews */
 }
