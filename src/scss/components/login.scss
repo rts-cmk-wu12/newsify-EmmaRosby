@@ -1,0 +1,74 @@
+@use '../placeholders/root.scss';
+@use '../placeholders/buttons.scss'; 
+
+.login{
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    &__welcome{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+
+        align-items: center;
+        margin-top: 8vh;
+
+        img{
+            width: 40%;
+        }
+    }
+    
+    &__with{
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        width: 100%;
+        
+        button{
+            @extend %buttonTransparent-big;
+            font-weight: 500;
+        }
+    }
+
+    &__divider{
+        display: flex;
+        align-items: center;
+
+        div{
+            background-color: root.$softBlack;
+            height: 2px;
+            width: 30vw;
+            margin-top: .3rem;
+        }
+
+        p{
+            margin: .5rem;
+        }
+    }
+
+    &__signIn{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        width: 100%;
+
+        button{
+            @extend %buttonGreen-big;
+            width: 100%;
+        }
+
+        p{
+            text-align: center;
+
+            a{
+                color: root.$green;
+                text-decoration: none;
+            }
+        }
+    }
+}

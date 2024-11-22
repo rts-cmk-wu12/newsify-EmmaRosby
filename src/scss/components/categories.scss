@@ -1,0 +1,104 @@
+@use '../placeholders/root.scss';
+
+.category{
+    
+    &__details{
+
+        &__summary{
+            display: flex;
+            border-bottom: solid root.$gray;
+            align-items: center;
+            img{
+                height: 1.5rem;
+                width: 1.5rem;
+                margin: 1rem;
+            }
+            h2{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+            }
+        }
+        
+        &__article{
+            display: flex;
+            border-bottom: solid 1px root.$gray;
+            
+            height: 7rem;
+            
+            position: relative;
+            transition: transform 0.3s ease-in;
+
+            &.dragging{
+                transition: none;
+            }
+            
+            &__all{
+                display: flex;
+                align-items: center;
+                width: 100;
+
+            
+
+                img{
+                height: 6rem;
+                width: 6rem;
+                margin: 1rem;
+                border-radius: .5rem;
+                background-color: root.$lightGray;
+            }  
+
+                &__decsription{
+                   
+
+                    h3{
+                        font-size: 1rem;
+                        font-weight: 800;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiped-left {
+    transform: translateX(-4rem);
+    
+}
+
+.swipeArticle-greenBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 8rem;
+    background-color: root.$green;
+    position: fixed;
+    right: -8rem;
+    transition: transform 0.3s ease-in-out;
+
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+
+.swipeArticle-redBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 4rem;
+    background-color: root.$red;
+    position: fixed;
+    right: -4rem;
+    transition: transform 0.3s ease-in-out;
+
+    img{
+        height: 2rem;
+        width: 2rem;
+    }
+}
