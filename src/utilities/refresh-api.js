@@ -20,4 +20,4 @@ document.addEventListener('touchend', e => {
         pullToRefresh.classList.remove('visible');
         location.reload();
     }
-}); 
+});
