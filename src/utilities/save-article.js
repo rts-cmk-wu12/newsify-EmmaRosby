@@ -1,8 +1,6 @@
-// Function to save an article to localStorage
+
 function saveArticle(article) {
-  const key = article.title;
-  localStorage.setItem(key, JSON.stringify(article));
-  console.log(`Article with key '${key}' saved to localStorage.`);
+  localStorage.setItem(article.title, 'saved')
 }
 
 export function addSwipeHandler(articleElement, article) {

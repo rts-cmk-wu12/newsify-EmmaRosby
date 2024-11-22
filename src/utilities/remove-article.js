@@ -1,6 +1,7 @@
-function removeArticle(articleKey) {
+function removeArticle(articleElement, articleKey) {
     if(localStorage.getItem(articleKey)){
         localStorage.removeItem(articleKey);
+        articleElement.remove();
     }
 }
 
@@ -17,6 +18,8 @@ export function addSwipeHandler(articleElement, article) {
         startX = e.touches[0].clientX;
         isDragging = true;
         articleElement.classList.add('dragging');
+        console.log('hello');
+        
     });
 
     // Dragging
@@ -42,7 +45,7 @@ export function addSwipeHandler(articleElement, article) {
 
             setTimeout(() => {
                 const articleKey = article.title;
-                removeArticle(articleKey);
+                removeArticle(articleElement, articleKey);
                 articleElement.remove();
             }); 
         } else {
@@ -55,3 +58,5 @@ export function addSwipeHandler(articleElement, article) {
     });
 
 }
+
+
