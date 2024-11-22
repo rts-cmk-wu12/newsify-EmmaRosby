@@ -27,7 +27,7 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [
-                {from: "public", to: "docs"}
+                {from: "public", to: ""}
             ]
         })
     ]
