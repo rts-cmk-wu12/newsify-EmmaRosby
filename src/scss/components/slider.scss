@@ -14,6 +14,7 @@
     animation: fadeIn 2s ease;
     
 }
+
 @keyframes fadeIn{
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -39,6 +40,7 @@
             font-size: 2rem;
             margin-bottom: 1rem;
         }
+
         p{
             font-size: 1.125rem;
         }
@@ -96,6 +98,7 @@
     transition: .2s;
     
 }
+
 .currentDot{
     background-color: root.$green;
     width: 3.5rem;

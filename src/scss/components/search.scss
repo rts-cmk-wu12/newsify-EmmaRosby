@@ -1,13 +1,10 @@
 @use '../placeholders/root.scss';
 
-
 .search{
     display: flex;
     justify-content: center;
     border-bottom: solid root.$gray;
  
-
-    
     input{
         height: 6vh;
         width: 98%;

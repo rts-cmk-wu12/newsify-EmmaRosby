@@ -10,6 +10,7 @@
         color: root.$green;
         font-size: 2rem;
     }
+
     p{
         font-size: 1.5rem;
         margin-top: .8lh;
@@ -39,6 +40,7 @@
             img{
                 height: 2rem;
             }
+
             h3{
                 font-size: 1.8rem;
                 text-transform: capitalize;
@@ -121,6 +123,7 @@
         border: solid root.$green;
         color: root.$green;
     }
+    
     button:active{
         scale: .95;
         transition: .1s;

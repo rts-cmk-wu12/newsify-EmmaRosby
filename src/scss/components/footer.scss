@@ -1,6 +1,5 @@
 @use '../placeholders/root.scss';
 
-
 footer{
     position: fixed;
     width: 100%;
@@ -18,15 +17,14 @@ footer{
         align-items: center;
         text-decoration: none;
         color: root.$softBlack;
-
         
         img{
             height: 2rem;
             width: 2rem;
         }
-    }
-    
+    } 
 }
+
 footer{
     .footer{
         &__current-page{
@@ -34,4 +32,3 @@ footer{
         }
     }
 }
-
