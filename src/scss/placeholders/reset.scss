@@ -1,0 +1,21 @@
+@use './root.scss';
+
+%basic-reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+%font-reset {
+    font-family: 'Playfair Display', 'sans-serif';
+    color: root.$softBlack;
+
+    p, small, button, input, a{
+        font-family: 'Open Sans';
+    }
+}
+
+%lineheight-reset {
+    margin-top: 1lh;
+}

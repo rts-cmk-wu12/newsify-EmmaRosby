@@ -1,0 +1,107 @@
+@use '../placeholders/root.scss';
+@use '../placeholders/buttons.scss'; 
+
+.indexWrapper{
+    padding: .5rem;
+}
+
+.onboarding{
+    display: flex;
+    flex-direction: column;
+    
+    height: 96vh;
+    justify-content: space-between;
+    animation: fadeIn 2s ease;
+    
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.slider{
+    
+    &__container{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    &__roll{
+        display: flex;
+    }
+    
+    &__info{
+        min-width: 100%;
+        text-align: center;
+
+        h2{
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 1.125rem;
+        }
+
+        img{
+            width: 100%;
+            margin-top: 18px;
+        }
+    }
+    
+    &__dots{
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 95%;
+    }
+    
+    &__skip {
+        @extend %buttonTransparent-small;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &__button{
+            @extend %buttonTransparent-small;
+            background: none;
+            border: none;
+            width: 100%;
+        }
+    }
+    
+    &__next{
+        @extend %buttonGreen-small;
+        
+    } 
+}
+
+.dot{
+    border-radius: 3rem;
+    width: .8rem;
+    height: .8rem;
+    background-color: root.$gray;
+    margin-top: 2rem;
+    transition: .2s;
+    
+}
+
+.currentDot{
+    background-color: root.$green;
+    width: 3.5rem;
+    transition: .2s;
+}
+
