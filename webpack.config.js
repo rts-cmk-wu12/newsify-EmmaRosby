@@ -10,7 +10,7 @@ module.exports = {
     output: {
         filename: '[name].bundle.js',
         clean: true,
-        path: path.resolve(__dirname, 'docs'),
+        /* path: path.resolve(__dirname, 'docs'), */
     },
     entry: {
         index: './src/index.js',
@@ -19,6 +19,7 @@ module.exports = {
         setting: './src/settings.js',
         home: './src/home.js',
         popular: './src/popular.js',
+        archive: './src/archive.js',
     },
 
 }

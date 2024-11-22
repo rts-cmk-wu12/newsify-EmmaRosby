@@ -1,3 +1,5 @@
+// https://blog.openreplay.com/implementing-pull-to-refresh-with-javascript/
+
 const pullToRefresh = document.querySelector('.pull-to-refresh');
 let touchStartY = 0;
 

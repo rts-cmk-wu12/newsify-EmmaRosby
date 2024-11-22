@@ -2,7 +2,7 @@ import sections from '../json/section.json';
 
 const homeContainer = document.querySelector('#homeCategoryContainer');
 
-/* const { saveArticle } = require ('./save-article.js'); */
+const { addSwipeHandler } = require ('./save-article.js');
 const { hideDisabledCategories } = require ('./deselected-article.js');
 const { fetchHomeTopStories } = require ('./nyt.js');
 const homeNews = await fetchHomeTopStories();
@@ -28,11 +28,14 @@ newsSections.forEach(function(category) {
     matchingArticles.forEach(article => {
         const articleElement = document.createElement('article')
         articleElement.innerHTML = `
-            <img src="./img/placeholder.svg" alt="">
-            <div class="category__details__article__decsription">
-                <h3 class="dark-mode-font">${article.title}</h3>
-                <p class="dark-mode-font">${truncate(article.abstract, 60)}</p>
-            </div>`
+            <div class="category__details__article__all">
+                <img src="./img/placeholder.svg" alt="">
+                <div class="category__details__article__all__decsription">
+                    <h3 class="dark-mode-font">${truncate(article.title, 30)}</h3>
+                    <p class="dark-mode-font">${truncate(article.abstract, 60)}</p>
+                </div>
+            </div>
+            <div class="swipeArticle-greenBox"><img src="./img/bookmarkWhite.svg" alt=""></div>`
                     
         articleElement.classList.add('category__details__article');
         detailsElement.append(articleElement);
@@ -41,27 +44,13 @@ newsSections.forEach(function(category) {
             window.open(article.url);
         })
 
-    /* 
-        const swipeAction = document.createElement('div');
-        swipeAction.className = 'swipe-action';
+        addSwipeHandler(articleElement, article)
+    });
 
-        const bookmarkIcon = document.createElement('img');
-        bookmarkIcon.src = '/img/bookmarkWhite.svg';
-        bookmarkIcon.alt = 'Bookmark';
-        bookmarkIcon.style.width = '2rem';
-        bookmarkIcon.style.height = '2rem';
-
-        swipeAction.appendChild(bookmarkIcon);
-        articleElement.appendChild(swipeAction);
-
-        articleElement.appendChild(swipeAction);
-
-        saveArticle(articleElement, article.title); */
-    })
 
     detailsElement.classList.add('category__details');
     homeContainer.append(detailsElement);
     hideDisabledCategories(category, detailsElement);
 
 
-})  
+});

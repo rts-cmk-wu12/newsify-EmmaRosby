@@ -27,11 +27,14 @@ newsSections.forEach(function(category) {
     matchingArticles.forEach(article => {
         const articleElement = document.createElement('article')
         articleElement.innerHTML = `
+            <div class="category__details__article__all">
                 <img src="./img/placeholder.svg" alt="">
-                    <div class="category__details__article__decsription">
-                        <h3 class="dark-mode-font">${article.title}</h3>
-                        <p class="dark-mode-font">${truncate(article.abstract, 60)}</p>
-                    </div>`
+                <div class="category__details__article__all__decsription">
+                    <h3 class="dark-mode-font">${truncate(article.title, 30)}</h3>
+                    <p class="dark-mode-font">${truncate(article.abstract, 60)}</p>
+                </div>
+            </div>
+            <div class="swipeArticle-greenBox"><img src="./img/bookmarkWhite.svg" alt=""></div>`
                     
         articleElement.classList.add('category__details__article');
         detailsElement.append(articleElement);

@@ -7,7 +7,7 @@ const imagesLight = document.querySelectorAll('.light-mode-img')
 
 // On page load, get the theme from localStorage
 const savedTheme = localStorage.getItem('theme'); 
-const isDark = savedTheme === 'dark'; // Set the initial state based on localStorage
+let isDark = savedTheme === 'dark'; // Set the initial state based on localStorage
 
 function toggleImages(showDark) {
     imagesDark.forEach(img => {
